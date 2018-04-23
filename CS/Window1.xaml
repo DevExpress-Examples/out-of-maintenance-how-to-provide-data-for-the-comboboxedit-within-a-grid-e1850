@@ -1,0 +1,21 @@
+﻿<Window x:Class="BindComboBoxEdit.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" Title="Window1" Height="300" Width="400">
+    <Window.Resources>
+        <DataTemplate x:Key="comboboxEditor">
+            <dxe:ComboBoxEdit Name="PART_Editor" IsTextEditable="False" ItemsSource="{Binding Data.DetailSource}" ValueMember="Id" DisplayMember="Value">
+            </dxe:ComboBoxEdit>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <dxg:GridControl Name="grid">
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="Text" />
+                <dxg:GridColumn FieldName="DetailId" CellTemplate="{StaticResource comboboxEditor}">
+                </dxg:GridColumn>
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:TableView Name="view" AutoWidth="True" EditorButtonShowMode="ShowAlways" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+
+</Window>
