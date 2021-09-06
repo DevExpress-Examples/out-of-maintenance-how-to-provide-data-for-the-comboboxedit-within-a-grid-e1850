@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindComboBoxEdit", "BindComboBoxEdit.csproj", "{3292CA2B-B0D9-4B6F-8826-84484D327030}"
+# Visual Studio 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindComboBoxEdit", "BindComboBoxEdit.Net5.csproj", "{3292CA2B-B0D9-4B6F-8826-84484D327030}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
